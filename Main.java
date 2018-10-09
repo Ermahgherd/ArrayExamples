@@ -34,12 +34,25 @@ class Main
           
         
         for (int i=0; i<n; i++)
-            ar1[1]=i;
+            {
+            ar1[i]=n-i;
+            System.out.println("ar1[" + i + "]"+ar1[i]);
+        }
         /*
          * Task 2.  Create a new array called ar2.
          *          Copy the elements of ar1 into ar2.
          */
         
+        //Another way to copy is .clone. So here it would be int[] ar2 = ar1.clone();
+        System.out.println("** ar2 **");
+        int ar2[] = new int[ar1.length];
+        
+        for (int i=0; i<ar1.length; i++)
+            {
+                ar2[i] = ar1[i];
+                System.out.println("ar2[" + i + "]"+ar2[i]);
+        }
+            
         
         /* 
          * Task 3. Add 1 to each element in ar1.  Print it out below
