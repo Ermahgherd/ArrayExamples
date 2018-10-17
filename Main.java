@@ -159,13 +159,15 @@ class Main
           *    ar2[2]=2
           *    ar2[3]=3  ->  ar2odds[1]=3
           */
+        System.out.println("** Task 8 **");
         int ar2odds[] = new int[ar2.length];
         int counter = 0;
-        for (int i = 0; n<ar2.length; n++)
+        for (int i = 0; i<ar2.length; i++)
         {
-            if (ar2[i]%2 == 1)
+            if (i%2 == 1)
             {
-                ar2[counter]= ar2[i];
+                ar2odds[counter]= ar2[i];
+                System.out.println(ar2odds[counter]);
                 counter++;
             }
         }
