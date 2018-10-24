@@ -212,8 +212,21 @@ class Main
         /*
          * Task 11.  Reverse the order of elements in ar2
          */
-        
-        
+        System.out.println("** Task 11 **");
+        int ar2len = ar2.length;
+        int holder2 = 0;
+        for (int i=0 ; i<ar2.length ; i++)
+            System.out.println("ar2["+i+"] = "+ar2[i]);
+        for (int i = 0; i<ar2.length-1/2; i++)
+        {
+            holder2 = ar2[i];
+            ar2[i] = ar2[ar2len-1-i];
+            ar2[ar2len-1-i] = holder2;
+        }
+        for (int i = 0; i<ar2.length; i++)
+        {
+            System.out.println(ar2[i]);
+        }
         /*
          * Task 12: 
          * Create an array of Strings called ar5.
