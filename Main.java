@@ -250,7 +250,42 @@ class Main
          *  
          *  Count how many words have more than 5 letters.
          */
-        
+        System.out.println("** Task 12 **");
+        String ar5[] = new String[16];
+        ar5[0]="Four";
+        ar5[1]="score";
+        ar5[2]="and";
+        ar5[3]="seven";
+        ar5[4]="years";
+        ar5[5]="ago";
+        ar5[6]="our";
+        ar5[7]="fathers";
+        ar5[8]="brought";
+        ar5[9]="forth";
+        ar5[10]="on";
+        ar5[11]="this";
+        ar5[12]="continent";
+        ar5[13]="a";
+        ar5[14]="new";
+        ar5[15]="nation";
+        int looper6 = 0;
+        int ar6[] = new int[16];
+        for (int i = 0; i<ar5.length; i++)
+        {
+            ar6[i] = ar5[i].length();
+        }
+        for (int i = 0; i<ar6.length; i++)
+        {
+            System.out.println(ar6[i]);
+        }
+        for (int i = 0; i<ar6.length; i++)
+        {
+            if (ar6[i] > 5)
+            {
+                looper6++;
+            }
+        }
+        System.out.println("It Has " +looper6 +" words longer than 5 letters");
         /*
          * Task 13
          * Create an array called monsterArray of 5 Monsters.
