@@ -300,7 +300,12 @@ class Main
          * Use a for loop to print out the names of monster that start with
          * a vowel
          */
-        
+        String monsterArray[] = new String[5];
+        monsterArray[0] = "Cookie";
+        monsterArray[1] = "Grover";
+        monsterArray[2] = "Oscar the Grouch";
+        monsterArray[3] = "Elmo";
+        monsterArray[4] = "Rosita";
          /*
           * Task 14
           * Create an array of integers from 3 to 94 and call it arx
