@@ -306,6 +306,16 @@ class Main
         monsterArray[2] = "Oscar the Grouch";
         monsterArray[3] = "Elmo";
         monsterArray[4] = "Rosita";
+        char c;
+        for (int i = 0; i>monsterArray.length; i++)
+        {
+            c=monsterArray[i].toLowerCase().charAt(0);
+            if (c == 'a' || c== 'e' || c== 'i' || c=='o' || c=='u')
+            {
+                
+            }
+        }
+        
          /*
           * Task 14
           * Create an array of integers from 3 to 94 and call it arx
