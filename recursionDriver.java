@@ -30,11 +30,20 @@ public class recursionDriver
  
  public static int oddnums(int n)
  {
-     if (n==1)
+     if (n<=1)
      {
-         return 0;
+         return 1;
      }
-     return 1+oddnums(n-2);
+     return n+oddnums(n-2);
+    }
+     
+ public static int evennums(int n)
+ {
+     if (n<=1)
+     {
+         return 1;
+     }
+     return n+evennums(n-2);
  }
  
  public static void main(String[] args)
@@ -60,6 +69,9 @@ public class recursionDriver
      System.out.println(fingers(8));
      
      System.out.println("*** Task 4 ***");
-     System.out.println(oddnums(41));
+     System.out.println(oddnums(5));
+     
+     System.out.println("*** Task 5 ***");
+     System.out.println(evennums(6));
  }
 }
